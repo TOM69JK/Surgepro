@@ -37,7 +37,7 @@ $done({
     title:"👑ⓈⓊⓇⒼⒺ👑ᴾᴿᴼ",
     content: "☀️炎黄光阴🌙："+ (new Date()).Format("yyyy-MM-dd HH:mm:ss")+"\n🛰运行🛰："+startTime + "\nMitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled),
     icon: icon_s?"crown.fill":"exclamationmark.triangle",
-   "icon-color":icon_s?"#EACD76":"#F20C00"
+   "icon-color":icon_s?"#FAFF72":"#F20C00"
 });
 })();
 function icon_status(status){
