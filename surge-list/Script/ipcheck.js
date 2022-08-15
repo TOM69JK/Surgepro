@@ -34,7 +34,7 @@ if ($trigger == "button") {
 	$notification.post("配置重载","配置重载成功","")
 };
 $done({
-    title:"👑ⓈⓊⓇⒼⒺ👑ᴾᴿᴼ",
+    title:"👑𝕾𝖀𝕽𝕲𝕰👑ᴾᴿᴼ",
     content:"🌗➟"+(new Date()).Format("yyyy-MM-dd 🪐➟HH:mm:ss")+"\n🛰星链运行🛰➟"+startTime + "\n🚥➟Mitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled),
     icon: icon_s?"crown.fill":"exclamationmark.triangle",
    "icon-color":icon_s?"#FAFF72":"#F20C00"
