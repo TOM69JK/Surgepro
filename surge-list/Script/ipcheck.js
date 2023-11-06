@@ -20,7 +20,7 @@ Date.prototype.Format = function (fmt) {
         "H+": this.getHours(), 
         "m+": this.getMinutes(),
         "s+": this.getSeconds(), 
-        "q+": Math.floor((this.getMonth() + 3) / 3), 
+        "q+": Math.floor((this.getMonth() + 3) / 3),  
         "S": this.getMilliseconds() 
     };
     if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
@@ -35,9 +35,9 @@ if ($trigger == "button") {
 };
 $done({
     title:"👑𝕾𝖀𝕽𝕲𝕰👑ᴾᴿᴼ",
-    content:"🌞➟"+(new Date()).Format("yyyy-MM-dd 🌜➟HH:mm:ss")+"\n🛰𝕊𝕥𝕒𝕣𝕝𝕚𝕟𝕜🛰➟"+startTime + "\n🚥➟Mitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled),
-    icon: icon_s?"crown.fill", 
-   "icon-color":icon_s?"#FFFF00" 
+    content:"🌞➟"+(new Date()).Format("yyyy-MM-dd 🌜➟HH:mm:ss")+"\n🛰𝕊𝕥𝕒𝕣𝕝𝕚𝕟𝕜🛰➟"+startTime + "\n🚥➟Mitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled), 
+    icon: icon_s?"crown.fill":"crown",  
+   "icon-color":icon_s?"#FFFF00":"#000000"  
 });
 })();
 function icon_status(status){
