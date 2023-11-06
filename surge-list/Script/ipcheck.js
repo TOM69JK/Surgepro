@@ -30,14 +30,14 @@ Date.prototype.Format = function (fmt) {
 }
 
 if ($trigger == "button") {
-	await httpAPI("/v1/profiles/reload");
+	await httpAPI("/v1/profiles/reload"); 
 	$notification.post("配置重载","配置重载成功","")
 };
 $done({
     title:"👑𝕾𝖀𝕽𝕲𝕰👑ᴾᴿᴼ",
     content:"🌞➟"+(new Date()).Format("yyyy-MM-dd 🌜➟HH:mm:ss")+"\n🛰𝕊𝕥𝕒𝕣𝕝𝕚𝕟𝕜🛰➟"+startTime + "\n🚥➟Mitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled),
-    icon: icon_s?"crown.fill":"crown",
-   "icon-color":icon_s?"#FFFF00":"#000000"
+    icon: icon_s?"crown.fill", 
+   "icon-color":icon_s?"#FFFF00" 
 });
 })();
 function icon_status(status){
